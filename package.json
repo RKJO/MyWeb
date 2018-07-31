@@ -1,0 +1,22 @@
+{
+  "name": "cv_web",
+  "version": "1.0.0",
+  "description": "Responsive portfololio website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RKJO/cv_web.git"
+  },
+  "author": "Rafal Jozwiak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RKJO/cv_web/issues"
+  },
+  "homepage": "https://github.com/RKJO/cv_web#readme",
+  "dependencies": {
+    "node-sass": "^4.9.2"
+  }
+}
