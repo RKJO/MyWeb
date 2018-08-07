@@ -1,4 +1,4 @@
-$primary-color: #444;
+$primary-color: #fff;
 $secondary-color: #eece1a;
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
@@ -30,6 +30,16 @@ $backbround-opacity: 0.8;
   }
 }
 
+// Set tex colour
+@function set-text-colour($colour) {
+  @if (lightness($colour) >40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+// Media Query Mixins
 @mixin mediaSm {
   @media screen and (max-width: 500px) {
     @content;
