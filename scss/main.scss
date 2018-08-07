@@ -1,12 +1,13 @@
 @import "config";
 @import "menu";
+@import "mobile";
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  @include bacground();
+  @include background();
   background: $primary-color;
   color: #fff;
   height: 100%;
