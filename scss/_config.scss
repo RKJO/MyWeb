@@ -31,7 +31,7 @@ $backbround-opacity: 0.8;
 }
 
 // Set tex colour
-@function set-text-colour($colour) {
+@function set-text-color($colour) {
   @if (lightness($colour) >40) {
     @return #000;
   } @else {
