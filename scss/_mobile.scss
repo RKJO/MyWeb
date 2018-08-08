@@ -69,7 +69,20 @@
   main#home h1 {
     margin-top: 10vh;
   }
+  .about-info {
+    .bio-image {
+      width: 250px;
+      height: 250px;
+    }
+  }
+
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  .boxes {
+    div {
+      font-size: 1.4rem;
+    }
   }
 }
