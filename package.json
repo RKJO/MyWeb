@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/RKJO/cv_web#readme",
   "dependencies": {
+    "gh-pages": "^1.2.0",
     "node-sass": "^4.9.2"
   }
 }
