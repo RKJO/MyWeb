@@ -181,6 +181,8 @@ main {
     background: #515151;
     padding: 5 rem;
     border-bottom: #eece1a 5px solid; }
+  .about-info .job-span {
+    margin: 1rem; }
 
 .projects {
   display: grid;
