@@ -126,6 +126,7 @@ main {
 
     &:hover {
       opacity: 0.5;
+      img: $home-image;
       border-color: $secondary-color;
       @include easeOut;
     }
