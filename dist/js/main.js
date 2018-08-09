@@ -4,6 +4,8 @@ const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".menu-nav");
 const menuBranding = document.querySelector(".menu-branding");
 const navItems = document.querySelectorAll(".nav-item");
+const close = document.querySelector(".close-modal");
+const inProgress = document.querySelectorAll("#in-progress");
 
 // set initial state of menu
 let showMenu = false;
@@ -30,4 +32,24 @@ function toggleMenu() {
     // Set menu state
     showMenu = false;
   }
+}
+
+// Showing popup
+function ModalPopup(event) {
+  event.preventDefault();
+  var modal = document.querySelector(".bg-modal");
+  modal.style.display = "flex";
+}
+
+for (var i = 0; i < inProgress.length; i++) {
+  inProgress[i].addEventListener("click", ModalPopup);
+}
+
+// closing Popup
+
+close.addEventListener("click", ClosePopup);
+
+function ClosePopup() {
+  var modal = document.querySelector(".bg-modal");
+  modal.style.display = "none";
 }

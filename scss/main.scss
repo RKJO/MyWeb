@@ -28,6 +28,7 @@ h3 {
 
   &.sm-heading {
     margin-bottom: 2rem;
+    margin-left: 18rem;
     padding: 0.2ram 1rem;
     background: rgba(lighten($primary-color, 2), 0.2);
   }
@@ -126,9 +127,48 @@ main {
 
     &:hover {
       opacity: 0.5;
-      img: $home-image;
       border-color: $secondary-color;
       @include easeOut;
+    }
+  }
+}
+.bg-modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: $primary-color;
+
+  .modal-content {
+    width: 30rem;
+    height: 18rem;
+    background-color: #fff;
+    opacity: 1;
+    border-radius: 1%;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+
+    .close-modal {
+      position: absolute;
+      top: 0;
+      right: 1rem;
+      font-size: 2rem;
+      transform: rotate(45deg);
+      cursor: pointer;
+    }
+
+    .md-modal {
+      color: $primary-color;
+      padding: 1.5rem;
+    }
+    .sm-modal {
+      display: block;
+      margin: 2rem auto;
     }
   }
 }
