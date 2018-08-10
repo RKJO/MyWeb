@@ -19,6 +19,9 @@
       line-height: 1;
       margin-bottom: 1rem;
     }
+    .sm-heading {
+      margin-left: 1rem;
+    }
   }
 
   ul.menu-nav,
@@ -62,10 +65,36 @@
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
+  .bg-modal {
+    .modal-content {
+      width: 27rem;
+      height: 17rem;
+      padding: 1rem;
+
+      .md-modal {
+        padding: 1.5rem;
+      }
+      .sm-modal {
+        display: block;
+        margin: 1rem;
+      }
+    }
+  }
 }
 
 //Smartphones
 @include mediaSm {
+  .menu-branding {
+    .portrait {
+      background: $sm-portrait-image;
+    }
+  }
+  main {
+    .sm-heading {
+      margin-left: 1rem;
+    }
+  }
+
   main#home h1 {
     margin-top: 10vh;
   }
@@ -83,6 +112,23 @@
   .boxes {
     div {
       font-size: 1.4rem;
+    }
+  }
+  .bg-modal {
+    height: 136%;
+    .modal-content {
+      width: 22rem;
+      height: 14rem;
+      padding: 1rem;
+
+      .md-modal {
+        color: $primary-color;
+        padding: 0.5rem;
+      }
+      .sm-modal {
+        display: block;
+        margin: 0.5rem;
+      }
     }
   }
 }
