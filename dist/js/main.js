@@ -53,3 +53,15 @@ function ClosePopup() {
   var modal = document.querySelector(".bg-modal");
   modal.style.display = "none";
 }
+
+// Publish on Git Hub Pages
+var ghpages = require("gh-pages");
+
+ghpages.publish(
+  "dist",
+  {
+    branch: "master",
+    repo: "https://github.com/RKJO/MyWeb"
+  },
+  callback
+);
