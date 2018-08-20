@@ -322,6 +322,8 @@ main {
       margin: 1rem; } }
 
 @media screen and (max-width: 500px) {
+  .menu-branding .portrait {
+    background: url(../img/sm_foto.jpg); }
   main .sm-heading {
     margin-left: 1rem; }
   main#home h1 {
