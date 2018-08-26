@@ -6,6 +6,7 @@ const menuBranding = document.querySelector(".menu-branding");
 const navItems = document.querySelectorAll(".nav-item");
 const close = document.querySelector(".close-modal");
 const inProgress = document.querySelectorAll("#in-progress");
+const item = document.querySelectorAll(".item");
 
 // set initial state of menu
 let showMenu = false;
@@ -53,15 +54,16 @@ function ClosePopup() {
   var modal = document.querySelector(".bg-modal");
   modal.style.display = "none";
 }
+// showing div-info
 
-// Publish on Git Hub Pages
-var ghpages = require("gh-pages");
 
-ghpages.publish(
-  "dist",
-  {
-    branch: "master",
-    repo: "https://github.com/RKJO/MyWeb"
-  },
-  callback
-);
+for (var i = 0; i < item.length; i++) {
+  item[i].querySelecor(".btn-light").addEventListener("click", function(e) {
+  var info = document.querySelectorAll(".info");
+  if (info[i].style.display === "none") {
+      info[i].style.display = "block";
+  } else {
+      info.classList.add("show");
+  }
+} 
+}
