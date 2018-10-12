@@ -201,27 +201,28 @@ main {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  position: absolute;
+  position: fixed;
   top: 0;
   display: none;
   justify-content: center;
   align-items: center;
   color: #444; }
   .bg-modal .modal-content {
-    width: 30rem;
-    height: 18rem;
+    width: 30%;
+    height: 30%;
     background-color: #fff;
     opacity: 1;
     border-radius: 1%;
     text-align: center;
-    padding: 1rem;
-    position: relative; }
+    padding: 20px;
+    position: relative;
+    animation-name: modalopen;
+    animation-duration: 1s; }
     .bg-modal .modal-content .close-modal {
       position: absolute;
       top: 0;
       right: 1rem;
       font-size: 2rem;
-      transform: rotate(45deg);
       cursor: pointer; }
     .bg-modal .modal-content .md-modal {
       color: #444;
@@ -312,14 +313,7 @@ main {
   .projects {
     grid-template-columns: repeat(2, 1fr); }
   .bg-modal .modal-content {
-    width: 27rem;
-    height: 17rem;
-    padding: 1rem; }
-    .bg-modal .modal-content .md-modal {
-      padding: 1.5rem; }
-    .bg-modal .modal-content .sm-modal {
-      display: block;
-      margin: 1rem; } }
+    width: 60%; } }
 
 @media screen and (max-width: 500px) {
   .menu-branding .portrait {
@@ -335,15 +329,5 @@ main {
     grid-template-columns: 1fr; }
   .boxes div {
     font-size: 1.4rem; }
-  .bg-modal {
-    height: 136%; }
-    .bg-modal .modal-content {
-      width: 22rem;
-      height: 14rem;
-      padding: 1rem; }
-      .bg-modal .modal-content .md-modal {
-        color: #444;
-        padding: 0.5rem; }
-      .bg-modal .modal-content .sm-modal {
-        display: block;
-        margin: 0.5rem; } }
+  .bg-modal .modal-content {
+    width: 80%; } }
