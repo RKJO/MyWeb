@@ -144,7 +144,7 @@ main {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  position: absolute;
+  position: fixed;
   top: 0;
   display: none;
   justify-content: center;
@@ -152,21 +152,24 @@ main {
   color: $primary-color;
 
   .modal-content {
-    width: 30rem;
-    height: 18rem;
+    width: 30%;
+    height: 30%;
     background-color: #fff;
     opacity: 1;
     border-radius: 1%;
     text-align: center;
-    padding: 1rem;
+    padding: 20px;
     position: relative;
+    animation-name: modalopen;
+    animation-duration: 1s;
 
     .close-modal {
       position: absolute;
       top: 0;
       right: 1rem;
       font-size: 2rem;
-      transform: rotate(45deg);
+      // Using when the close sign is "+"
+      // transform: rotate(45deg);
       cursor: pointer;
     }
 

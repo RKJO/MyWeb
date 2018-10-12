@@ -67,17 +67,7 @@
   }
   .bg-modal {
     .modal-content {
-      width: 27rem;
-      height: 17rem;
-      padding: 1rem;
-
-      .md-modal {
-        padding: 1.5rem;
-      }
-      .sm-modal {
-        display: block;
-        margin: 1rem;
-      }
+      width: 60%;
     }
   }
 }
@@ -115,20 +105,8 @@
     }
   }
   .bg-modal {
-    height: 136%;
     .modal-content {
-      width: 22rem;
-      height: 14rem;
-      padding: 1rem;
-
-      .md-modal {
-        color: $primary-color;
-        padding: 0.5rem;
-      }
-      .sm-modal {
-        display: block;
-        margin: 0.5rem;
-      }
+      width: 80%;
     }
   }
 }
