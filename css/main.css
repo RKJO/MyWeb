@@ -109,7 +109,7 @@ body {
       right: 0;
       width: 100%;
       height: 100%;
-      background: rgba(68, 68, 68, 0.8);
+      background: rgba(68, 68, 68, 0.6);
       z-index: -1; }
 
 h1,
@@ -127,7 +127,7 @@ h3 {
     margin-bottom: 2rem;
     margin-left: 18rem;
     padding: 0.2ram 1rem;
-    background: rgba(73, 73, 73, 0.2); }
+    background: rgba(73, 73, 73, 0.1); }
 
 a {
   color: #fff;
